@@ -5,7 +5,12 @@ React-redux boilerplate
 Features
 ========
 * Webpack build with JSX syntax and ES2015
-* React
-* Redux
-* React-router
+* React and Redux
+* Redux router
 * Tests with *Jest* and **React Test Utilities** (There is an [issue](https://github.com/facebook/react/issues/4972) with stateless components testing)
+* Standard.js code quality checks
+
+Gotchas
+=======
+* There is some magic done by **Jest** and **TestUtils**. jest.dontMock('path') does not work with es6 import sometimes. **USE require('path') in jest tests** while testing components.
+* Stateless(arrow) components cannot be tested with test utils(yet) cause of [this issue](https://github.com/facebook/react/issues/4972)
