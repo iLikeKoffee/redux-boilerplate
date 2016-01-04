@@ -1,5 +1,5 @@
 jest.dontMock('../example')
-import {increment, decrement} from '../example'
+const {increment, decrement} = require('../example')
 
 describe('example', () => {
   it('Increments and decrements numbers', () => {

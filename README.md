@@ -28,5 +28,15 @@ Some commands will run on both unix and windows, but most work only Mac and Linu
 
 Gotchas
 -------
-* There is some magic done by **Jest** and **TestUtils**. jest.dontMock('path') does not work with es6 import sometimes. **USE require('path') in jest tests** while testing components.
+* There is some magic done by **Jest** and **TestUtils**. jest.dontMock('path') does not work with es6 import. **USE require('path') in jest tests** while testing.
 * Stateless(arrow) components cannot be tested with test utils(yet) cause of [this issue](https://github.com/facebook/react/issues/4972)
+
+Links for further reading
+-------------------------
+* [redux](https://github.com/rackt/redux)
+* [redux-style-guide](https://github.com/ghengeveld/react-redux-styleguide)
+* [ducks proposal](https://github.com/erikras/ducks-modular-redux)
+* [jest](https://facebook.github.io/jest/)
+* [react-test-utils](https://facebook.github.io/jest/)
+* [standard.js](http://standardjs.com/)
+* [dumb and smart components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.p8p5yhc6u)
