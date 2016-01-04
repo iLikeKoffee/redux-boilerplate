@@ -1,7 +1,7 @@
 React-redux boilerplate
 =======================
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-![](https://img.shields.io/badge/version-0.0.1-green.svg)
+![](https://img.shields.io/badge/version-0.1.0-green.svg)
 
 Features
 --------
@@ -13,6 +13,7 @@ Features
 * **Standard.js** code styles checks
 * Less preprocessor with autoprefixer
 * Bootstrap
+* Documentation from docstrings by [esdoc](https://esdoc.org/)
 
 Commands
 --------
@@ -23,6 +24,7 @@ Commands
 * `npm run test` - check code style and run tests
 * `npm run clean` - remove build results
 * `npm run package` - runs tests, builds project for production and creates tarball ready for deployment to webserver root
+* `npm run docs` - generate documentation esdoc
 **Note**
 Some commands will run on both unix and windows, but most work only Mac and Linux.
 

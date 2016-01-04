@@ -11,7 +11,8 @@
     "test": "npm run lint && npm run jest",
     "clean": "rm -rf static/* bundle.tar.gz",
     "tar": "tar -czf bundle.tar.gz index.html static",
-    "package": "npm run clean && npm run test && npm run build && npm run tar"
+    "package": "npm run clean && npm run test && npm run build && npm run tar",
+    "docs": "./node_modules/.bin/esdoc -c .esdocrc.json"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
@@ -33,6 +34,8 @@
     "babel-jest": "^6.0.1",
     "babel-loader": "^5.0.0",
     "css-loader": "^0.22.0",
+    "esdoc": "^0.4.3",
+    "esdoc-es7-plugin": "0.0.3",
     "extract-text-webpack-plugin": "^0.9.1",
     "image-webpack-loader": "^1.6.2",
     "jest-cli": "^0.8.2",
