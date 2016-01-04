@@ -1,1 +1,1 @@
-export {routerStateReducer as router} from 'redux-router';
+export {routerStateReducer as router} from 'redux-router'

@@ -1,9 +1,9 @@
-import React from 'react';
-import {Route} from 'react-router';
-import Main from './pages/main';
+import React from 'react'
+import {Route} from 'react-router'
+import Main from './pages/main'
 
 const config = [
-    <Route path="/" component={Main}/>
-];
+  <Route path='/' component={Main}/>
+]
 
-export default config;
+export default config
