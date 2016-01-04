@@ -1,11 +1,16 @@
 import React, {Component} from 'react'
+import {Counter} from '../containers'
 
 export default class Main extends Component {
   render () {
     return (
-      <div>
-        <h1>Main page</h1>
-        <p>Some content</p>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <h1>Counter example</h1>
+          </div>
+        </div>
+        <Counter/>
       </div>
     )
   }
