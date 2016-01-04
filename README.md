@@ -25,6 +25,7 @@ Commands
 * `npm run clean` - remove build results
 * `npm run package` - runs tests, builds project for production and creates tarball ready for deployment to webserver root
 * `npm run docs` - generate documentation esdoc
+
 **Note**
 Some commands will run on both unix and windows, but most work only Mac and Linux.
 
