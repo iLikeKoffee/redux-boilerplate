@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 // Exported from redux-devtools
-import { createDevTools } from 'redux-devtools';
+import { createDevTools } from 'redux-devtools'
 
 // Monitors are separate packages, and you can make a custom one
-import LogMonitor from 'redux-devtools-log-monitor';
-import DockMonitor from 'redux-devtools-dock-monitor';
+import LogMonitor from 'redux-devtools-log-monitor'
+import DockMonitor from 'redux-devtools-dock-monitor'
 
 // createDevTools takes a monitor and produces a DevTools component
 const DevTools = createDevTools(
@@ -14,16 +14,16 @@ const DevTools = createDevTools(
   // Here, we put LogMonitor inside a DockMonitor.
   <DockMonitor toggleVisibilityKey='ctrl-h'
                changePositionKey='ctrl-q'>
-    <LogMonitor theme='tomorrow' />
+    <LogMonitor theme='tomorrow'/>
   </DockMonitor>
-);
+)
 
-export function renderDevTools(store){
-  if(__DEV__){
+export function renderDevTools (store) {
+  if (__DEV__) {
     return (<DevTools store={store}/>)
   } else {
-    return null;
+    return null
   }
 }
 
-export default DevTools;
+export default DevTools

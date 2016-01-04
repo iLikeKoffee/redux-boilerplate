@@ -8,9 +8,13 @@
     "build-dev": "webpack -p",
     "lint": "./node_modules/.bin/standard",
     "jest": "./node_modules/.bin/jest",
-    "test": "npm run lint && npm run jest"
+    "test": "npm run lint && npm run jest",
+    "clean": "rm -rf static/* bundle.tar.gz",
+    "tar": "tar -czf bundle.tar.gz index.html static",
+    "package": "npm run clean && npm run test && npm run build && npm run tar"
   },
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "history": "^1.17.0",
     "immutable": "^3.7.6",
     "react": "^0.14.5",
@@ -47,6 +51,7 @@
   },
   "standard": {
     "globals": [
+      "__DEV__",
       "jest",
       "describe",
       "it",

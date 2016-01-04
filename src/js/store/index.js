@@ -6,8 +6,8 @@ import * as reducers from '../ducks/root'
 import DevTools from '../utils/dev-tools'
 import routes from '../routing'
 
-let createStoreWithMiddleware;
-if(__DEV__){
+let createStoreWithMiddleware
+if (__DEV__) {
   createStoreWithMiddleware = compose(
     applyMiddleware(thunkMiddleware),
     reduxReactRouter({
