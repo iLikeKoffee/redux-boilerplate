@@ -7,8 +7,10 @@ Features
 * Webpack build with JSX syntax and ES2015
 * React and Redux
 * Redux router
+* Redux dev tools and hot reload
 * Tests with *Jest* and **React Test Utilities** (There is an [issue](https://github.com/facebook/react/issues/4972) with stateless components testing)
 * Standard.js code quality checks
+* Less preprocessor
 
 Gotchas
 =======
