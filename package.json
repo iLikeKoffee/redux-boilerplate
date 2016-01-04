@@ -29,6 +29,7 @@
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-core": "^5.0.0",
+    "babel-eslint": "^4.1.6",
     "babel-jest": "^6.0.1",
     "babel-loader": "^5.0.0",
     "css-loader": "^0.22.0",
@@ -50,6 +51,7 @@
     "webpack-dev-server": "^1.12.1"
   },
   "standard": {
+    "parser": "babel-eslint",
     "globals": [
       "__DEV__",
       "jest",
