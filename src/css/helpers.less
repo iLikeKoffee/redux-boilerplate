@@ -1,9 +1,23 @@
-@gap: 16px;
+@gap: 15px;
 
-.no-padding {
-  padding: 0;
+.row-v-gap {
+  padding-top: @gap;
+  padding-bottom: @gap;
 }
 
-.padding {
+.row-h-gap {
+  padding-right: @gap;
+  padding-left: @gap;
+}
+
+.row-gap {
   padding: @gap;
+}
+
+.flex {
+  display: flex;
+}
+
+.full-height {
+  height: 100vh;
 }
