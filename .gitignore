@@ -3,4 +3,5 @@ static
 .idea
 bundle.tar.gz
 .DS_Store
+npm-debug.log
 esdoc

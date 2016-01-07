@@ -3,7 +3,7 @@ import './styles.less'
 
 export default class LoginForm extends Component {
   static propTypes = {
-    onSubmit: React.PropTypes.Function
+    onSubmit: React.PropTypes.func
   }
   static defaultProps = {
     onSubmit: (data, e) => {
@@ -48,7 +48,7 @@ export default class LoginForm extends Component {
                    type='password'
                    className='form-control'
                    value={this.state.password}
-                   onChange={(e) => this.setState({password: e.target.password})}/>
+                   onChange={(e) => this.setState({password: e.target.value})}/>
           </div>
         </div>
         <div className='row row-gap'>
