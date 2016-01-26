@@ -9,7 +9,7 @@ class Counter extends Component {
   }
 
   handleIncrement = (e) => {
-    this.props.dispatch(increment())
+    this.props.dispatch(increment());
   }
 
   handleDecrement = (e) => {
