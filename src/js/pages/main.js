@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import Counter from "../containers/counter"
-import Header from "../components/pages/header"
-import User from '../components/pages/about-user'
-import Lecture from  '../components/pages/teacher/lecture'
-import Footer from  '../components/pages/footer'
-import Courses from '../components/pages/teacher/courses'
-import Students from '../components/pages/teacher/students'
+
+import Header from "./header"
+import User from './about-user'
+import Teacher from './teacher/teacher'//преподователь
+import TeacherLecture from  "./techer-lecture/teacher-lecture"//лекция преподователя
+import Student from './student/student'//студент
+import Footer from  './footer'
 
 const logoPath=require('../../img/logo.png');
-const logoFooterPath=require('../../img/logo-footer.png');
 
 export default class Main extends Component {
 
@@ -17,7 +17,6 @@ export default class Main extends Component {
     <div>
         <div className="wrapper">
             <Header/>
-
             <div className="subhead shad">
                 <div className="container">
                     <div className="row">
@@ -28,30 +27,10 @@ export default class Main extends Component {
                     </div>
                 </div>
             </div>
-
-            <div className="shad pt40" >
-                <div className="container">
-                    <div className="row">
-                        <Lecture/>
-                        <Courses/>
-                    </div>
-                </div>
-            </div>
-
-            <Students/>
-
+            <Student/>
         </div>
-
          <Footer/>
-
-
     </div>
-
-
-
-
-
-
 
     )
   }

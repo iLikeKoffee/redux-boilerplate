@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-const ImgPath=require('../../../../pict/face1.png');
+const ImgPath=require('../../../pict/face1.png');
 
 export default class Students extends Component {
     render () {

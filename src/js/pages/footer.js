@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-const ImgPath=require('../../../img/logo-footer.png');
+const ImgPath=require('../../img/logo-footer.png');
 
 export default class Footer extends Component {
     render () {
