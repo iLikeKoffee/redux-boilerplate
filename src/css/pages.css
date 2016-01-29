@@ -157,6 +157,7 @@ footer .text {position: relative; top:5px;}
   position: relative;
   line-height: 50px;
   vertical-align: middle;
+  margin: 0px 20px;
 }
 .menu:after {display: inline-block; content: ""; width: 100%;}
 .menu li .notice {
@@ -201,6 +202,7 @@ footer .text {position: relative; top:5px;}
   height: 30px;
   position: absolute;
   top:50%;
+  left: 0%;
   margin-top: -15px;
   background: url(../img/icon-search.png) 50% 50% no-repeat;
 }
@@ -220,8 +222,8 @@ footer .text {position: relative; top:5px;}
   margin-left: 20px;
   position: relative;
 }
-.logo img {margin-right: 10px; display: inline-block; width: 70px;}
-.logo span {display: inline-block; width: 200px;}
+.logo img {margin-right: 10px; display: inline-block; width: 70px;position: relative;    float: left;}
+.logo span {display: inline-block; width: 200px;    float: right;}
 footer .logo {color: #fff; font-size: 19px; top:10px;}
 footer .logo img {width: auto;}
 
@@ -318,3 +320,5 @@ footer .logo img {width: auto;}
 .comment .img div {width: 65px; height: 65px; overflow: hidden; border-radius: 50%; position: relative; margin-bottom: 8px;}
 .comment .img img {width: 100%;}
 .comment p {line-height: 1.5; margin-top: 18px; border-bottom: 1px solid #666; padding-bottom: 7px; margin-bottom: 7px;}
+
+

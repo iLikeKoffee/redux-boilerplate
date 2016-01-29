@@ -6,18 +6,19 @@ import Comments from "./comments"
 export default class TeacherLecture extends Component {
     render () {
         return (
+            <div>
             <div className="shad pt40" >
                 <div className="container">
                     <div className="row">
                 <Lecture/>
                 <Course/>
-                <Comments/>
-
-
 
                     </div>
+
                 </div>
             </div>
+            <Comments/>
+     </div>
         )
     }
 }

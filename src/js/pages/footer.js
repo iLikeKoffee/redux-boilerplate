@@ -12,7 +12,7 @@ export default class Footer extends Component {
                             <a href="" className="logo"> <img src={ImgPath}/> <span>Портал дистанционного образования КГУ</span> </a>
                         </div>
                         <div className="col-md-3">
-                            Ул. Радищева, 33, Курск, 305000, Российская Федерация
+                            Ул. Радищева, 33, Курск, 305000, Российская Федерация <br/>
                             <a href="mailto:info@kursksu.ru">info@kursksu.ru</a> | <a href="">Задать вопрос</a>
                         </div>
 
