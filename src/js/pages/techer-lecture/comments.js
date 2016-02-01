@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 const ImgPath = require('../../../pict/face3.png')
 
 export default class Comments extends Component {
-  render() {
+  render () {
     return (
       <div className='bg-white pt40'>
         <div className='container'>

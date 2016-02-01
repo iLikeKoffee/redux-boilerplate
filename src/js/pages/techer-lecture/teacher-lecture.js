@@ -4,7 +4,7 @@ import Course from './course'
 import Comments from './comments'
 
 export default class TeacherLecture extends Component {
-  render() {
+  render () {
     return (
       <div>
         <div className='shad pt40'>

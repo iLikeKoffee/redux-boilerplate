@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 export default class Lecture extends Component {
-  render() {
+  render () {
     return (
       <div className='col-md-8 b30'>
         <h1 className='bubble'>Экономический анализ производственно-хозяйственной деятельности</h1>

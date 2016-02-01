@@ -4,7 +4,7 @@ import Courses from './courses'
 import Students from './students'
 
 export default class Teacher extends Component {
-  render() {
+  render () {
     return (
       <div>
         <div className='shad pt40'>

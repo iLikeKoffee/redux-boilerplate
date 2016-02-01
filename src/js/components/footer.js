@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 const ImgPath = require('../../img/logo-footer.png')
 
 export default class Footer extends Component {
-  render() {
+  render () {
     return (
       <footer>
         <div className='container'>

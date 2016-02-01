@@ -5,7 +5,7 @@ const logoPath2 = require('../../../pict/l2.jpg')
 const logoPath3 = require('../../../pict/l3.jpg')
 
 export default class Lecture extends Component {
-  render() {
+  render () {
     return (
       <div className='col-md-8 b30'>
         <h1 className='bubble'>Романтизм и реализм во французской литературе 30-40-х годов XIX века</h1>

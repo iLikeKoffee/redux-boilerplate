@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 export default class Course extends Component {
-  render() {
+  render () {
     return (
       <div className='col-md-4 b30'>
         <div className='right'>
