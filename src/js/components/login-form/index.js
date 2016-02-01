@@ -18,7 +18,7 @@ export default class LoginForm extends Component {
     this.props.onSubmit({login: this.state.login, password: this.state.password}, e)
   }
 
-  render () {
+  render() {
     return (
       <form className='login-wrap container'
             onSubmit={this.handleSubmit}>

@@ -1,7 +1,7 @@
-export function increment (n) {
+export function increment(n) {
   return n + 1
 }
 
-export function decrement (n) {
+export function decrement(n) {
   return n - 1
 }

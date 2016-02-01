@@ -17,7 +17,7 @@ const LOGOUT_FAILED = 'LOGOUT_FAILED'
  * @param password
  * @returns {{type: string, payload: {login: *, password: *}}}
  */
-export function requestLogin (login, password) {
+export function requestLogin(login, password) {
   return {
     type: LOGIN_REQUESTED,
     payload: {
@@ -32,7 +32,7 @@ export function requestLogin (login, password) {
  * @param response
  * @returns {*}
  */
-export function handleLogin (response) {
+export function handleLogin(response) {
   if (response.status === 200) {
     return {
       type: LOGGED_IN,
@@ -50,7 +50,7 @@ export function handleLogin (response) {
  * Request logout action creator
  * @returns {{type: string}}
  */
-export function requestLogout () {
+export function requestLogout() {
   return {
     type: LOGOUT_REQUESTED
   }
@@ -61,7 +61,7 @@ export function requestLogout () {
  * @param response
  * @returns {*}
  */
-export function handleLogout (response) {
+export function handleLogout(response) {
   if (response.status === 200) {
     return {
       type: LOGGED_OUT
@@ -79,7 +79,7 @@ export function handleLogout (response) {
  * @param password
  * @returns {Function}
  */
-export function loginAsync (login, password) {
+export function loginAsync(login, password) {
   return (dispatch, getState) => {
     dispatch(requestLogin(login, password))
     setTimeout(() => {
@@ -99,7 +99,7 @@ export function loginAsync (login, password) {
  * Asyncronous action creator for logout
  * @returns {Function}
  */
-export function logoutAsync () {
+export function logoutAsync() {
   return (dispatch, getState) => {
     dispatch(requestLogout())
     setTimeout(() => {
