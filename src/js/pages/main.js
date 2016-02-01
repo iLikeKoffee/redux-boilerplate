@@ -12,25 +12,26 @@ export default class Main extends Component {
 
   render () {
     return (
-    <div>
+      <div>
         <div className='wrapper'>
-            <Header/>
-            <div className='subhead shad'>
-                <div className='container'>
-                    <div className='row'>
-                          <User/>
-                        <div className='col-md-4'>
-                            <a href='' className='logo'> <img src={logoPath}/> <span>Портал дистанционного образования КГУ</span> </a>
-                        </div>
-                    </div>
+          <Header/>
+          <div className='subhead shad'>
+            <div className='container'>
+              <div className='row'>
+                <User/>
+                <div className='col-md-4'>
+                  <a href='' className='logo'> <img src={logoPath}/> <span>Портал дистанционного образования КГУ</span>
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
 
-           <Student/>
+          <Student/>
 
         </div>
-         <Footer/>
-    </div>
+        <Footer/>
+      </div>
 
     )
   }
