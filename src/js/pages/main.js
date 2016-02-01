@@ -26,7 +26,7 @@ export default class Main extends Component {
                 </div>
             </div>
 
-           <Teacher/>
+           <Student/>
 
         </div>
          <Footer/>

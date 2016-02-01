@@ -7,7 +7,7 @@ export default class Task extends Component {
                 <h1 className='bubble'>Лента заданий</h1>
                 <div className='list-item number'>
                     <div className='counter'>
-                        <div className='num bg-red'> <span>1</span> день </div>
+                        <div className='num bg-red'> <span>1</span> <div className = 'day'>день</div> </div>
                         <div className='deadline'>
                             <div className='f-blue'>сдать до</div>
                             26.08.2010
@@ -19,7 +19,7 @@ export default class Task extends Component {
                 </div>
                 <div className='list-item number'>
                     <div className='counter'>
-                        <div className='num bg-orange'> <span>3</span> дня </div>
+                        <div className='num bg-orange'> <span>3</span> <div className = 'day'>дня</div> </div>
                         <div className='deadline'>
                             <div className='f-blue'>сдать до</div>
                             26.08.2010
@@ -33,7 +33,7 @@ export default class Task extends Component {
                 </div>
                 <div className='list-item number'>
                     <div className='counter'>
-                        <div className='num bg-aqua'> <span>7</span> дней </div>
+                        <div className='num bg-aqua'> <span>7</span> <div className = 'day'>дней</div></div>
                         <div className='deadline'>
                             <div className='f-blue'>сдать до</div>
                             26.08.2010
@@ -44,7 +44,7 @@ export default class Task extends Component {
                 </div>
                 <div className='list-item number'>
                     <div className='counter'>
-                        <div className='num bg-aqua'> <span>8</span> дней </div>
+                        <div className='num bg-aqua'> <span>8</span> <div className = 'day'>дней</div> </div>
                         <div className='deadline'>
                             <div className='f-blue'>сдать до</div>
                             26.08.2010
@@ -58,7 +58,7 @@ export default class Task extends Component {
                 </div>
                 <div className='list-item number'>
                     <div className='counter'>
-                        <div className='num bg-light'> <span>12</span> дней </div>
+                        <div className='num bg-light'> <span>12</span> <div className = 'day'> дней </div> </div>
                         <div className='deadline'>
                             <div className='f-blue'>сдать до</div>
                             26.08.2010
@@ -69,7 +69,7 @@ export default class Task extends Component {
                 </div>
                 <div className='list-item number'>
                     <div className='counter'>
-                        <div className='num bg-light'> <span>17</span> дней </div>
+                        <div className='num bg-light'> <span>17</span> <div className = 'day'>дней</div> </div>
                         <div className='deadline'>
                             <div className='f-blue'>сдать до</div>
                             26.08.2010

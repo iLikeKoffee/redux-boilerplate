@@ -265,8 +265,10 @@ footer .logo img {width: auto;}
   border-radius: 50%;
   text-align: center;
 }
-.list-item .counter .num span {display: block; font-size: 36px; line-height: 1; padding-top: 5px;}
+.list-item .counter   {display: block; font-size: 36px; line-height: 1; padding-top: 5px;}
 .list-item .counter .deadline {font-size: 12px; position: absolute; bottom: 0;}
+
+
 
 .list-item.number .lnk-list, .list-item.number .lnk-apply, .list-item.number .lnk-play {margin-top: 15px;}
 
@@ -321,4 +323,6 @@ footer .logo img {width: auto;}
 .comment .img img {width: 100%;}
 .comment p {line-height: 1.5; margin-top: 18px; border-bottom: 1px solid #666; padding-bottom: 7px; margin-bottom: 7px;}
 
+.day {font-size: 11pt;}
 
+.num span {display: block; font-size: 36px; line-height: 1; padding-top: 2px;}
