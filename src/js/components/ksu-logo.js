@@ -23,6 +23,6 @@ export default class KSULogo extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
