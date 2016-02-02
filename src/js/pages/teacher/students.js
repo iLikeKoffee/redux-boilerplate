@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-const ImgPath = require('../../../pict/face1.png')
+const ImgPath = require('../../../img/face1.png')
 
 export default class Students extends Component {
   render () {
@@ -36,43 +36,13 @@ export default class Students extends Component {
                     Имяимя Отчество </a>
                 </div>
 
-                <div className='col-md-3 item-stud'>
-                  <div className='ava'><img src={ImgPath}/></div>
-                  <a href=''>Фамилия <br/>
-                    Имяимя Отчество </a>
-                </div>
-                <div className='col-md-3 item-stud'>
-                  <div className='ava'><img src={ImgPath}/></div>
-                  <a href=''>Фамилия <br/>
-                    Имяимя Отчество </a>
-                </div>
-                <div className='col-md-3 item-stud'>
-                  <div className='ava'><img src={ImgPath}/></div>
-                  <a href=''>Фамилия <br/>
-                    Имяимя Отчество </a>
-                </div>
-                <div className='col-md-3 item-stud'>
-                  <div className='ava'><img src={ImgPath}/></div>
-                  <a href=''>Фамилия <br/>
-                    Имяимя Отчество </a>
-                </div>
-                <div className='col-md-3 item-stud'>
-                  <div className='ava'><img src={ImgPath}/></div>
-                  <span className='status f-blue'>online</span>
-                  <a href=''>Фамилия <br/>
-                    Имяимя Отчество </a>
-                </div>
-                <div className='col-md-3 item-stud'>
-                  <div className='ava'><img src={ImgPath}/></div>
-                  <span className='status f-blue'>online</span>
-                  <a href=''>Фамилия <br/>
-                    Имяимя Отчество </a>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
     )
   }
 }

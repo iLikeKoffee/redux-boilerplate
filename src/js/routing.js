@@ -4,11 +4,16 @@ import Main from './pages/main'
 import Login from './pages/login'
 import NotFound from './pages/not-found'
 import Student from './pages/student'
+import Teacher from './pages/teacher'
+import TeacherLecture from './pages/techer-lecture'
+
 
 const config = [
   <Route path='/'>
     <IndexRoute component={Main}/>,
     <Route path='student' component={Student}/>
+    <Route path='teacher' component={Teacher}/>
+    <Route path='teacher-lecture' component={ TeacherLecture}/>
     <Route path='login' component={Login}/>,
     <Route path='*' component={NotFound}/>
   </Route>

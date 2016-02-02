@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-const ImgPath = require('../../pict/19.png')
+const ImgPath = require('../../img/19.png')
 
 export default class User extends Component {
   render () {

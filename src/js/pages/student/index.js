@@ -26,6 +26,39 @@ const articles = [
   }
 ]
 
+const tasks = [
+  {
+    day:'1',
+    deadline:'26.08.2010',
+    nameCourse: 'Экономический анализ производственно-хозяйственной деятельности',
+    nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
+    nameTest: 'Тест: Анализ использования основных фондов организации'
+  },
+  {
+    day:'3',
+    deadline:'26.08.2010',
+    nameCourse: 'Бухгалтерский финансовый учет',
+    nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
+    nameTest: 'Тест: Анализ использования основных фондов организации'
+  },
+  {
+    day:'7',
+    deadline:'26.08.2010',
+    nameCourse: 'Экономический анализ производственно-хозяйственной деятельности',
+    nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
+    nameTest: 'Тест: Анализ использования основных фондов организации'
+  },
+  {
+    day:'11',
+    deadline:'26.08.2010',
+    nameCourse: 'Бухгалтерский финансовый учет',
+    nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
+    nameTest: 'Тест: Анализ использования основных фондов организации'
+  }
+]
+
+
+
 
 export default class Student extends Component {
   render () {
@@ -37,7 +70,7 @@ export default class Student extends Component {
           <div className='pt40'>
             <div className='container'>
               <div className='row'>
-                <Task/>
+                <Task tasks={tasks}/>
                 <CourseList courses={courses} articles={articles}/>
               </div>
             </div>

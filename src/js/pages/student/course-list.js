@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 export default class CourseList extends Component {
 
   renderRequiredCourses (courses) {
-    const items = courses
+  const items = courses
       .filter(c => c.required)
       .map(c => (
         <div className='list-item'>
