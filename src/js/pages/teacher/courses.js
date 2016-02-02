@@ -2,12 +2,12 @@ import React, {Component} from 'react'
 
 export default class Courses extends Component {
 
-  renderCourses(courses){
-      const items = courses
-        .map(c => (
-          <div className='list-item'><a href='' className='f-blue'>{c.name}</a></div>
-        ))
-    return(
+  renderCourses (courses) {
+    const items = courses
+      .map(c => (
+        <div className='list-item'><a href='' className='f-blue'>{c.name}</a></div>
+      ))
+    return (
       <div>
         {items}
       </div>

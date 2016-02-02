@@ -7,7 +7,6 @@ import Student from './pages/student'
 import Teacher from './pages/teacher'
 import TeacherLecture from './pages/techer-lecture'
 
-
 const config = [
   <Route path='/'>
     <IndexRoute component={Main}/>,

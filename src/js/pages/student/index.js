@@ -5,7 +5,6 @@ import Header from '../../components/header'
 import Logo from '../../components/ksu-logo'
 import Footer from '../../components/footer'
 
-
 const courses = [
   {
     required: true,
@@ -28,37 +27,34 @@ const articles = [
 
 const tasks = [
   {
-    day:'1',
-    deadline:'26.08.2010',
+    day: '1',
+    deadline: '26.08.2010 ',
     nameCourse: 'Экономический анализ производственно-хозяйственной деятельности',
     nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
     nameTest: 'Тест: Анализ использования основных фондов организации'
   },
   {
-    day:'3',
-    deadline:'26.08.2010',
+    day: '3',
+    deadline: '26.08.2010',
     nameCourse: 'Бухгалтерский финансовый учет',
     nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
     nameTest: 'Тест: Анализ использования основных фондов организации'
   },
   {
-    day:'7',
-    deadline:'26.08.2010',
+    day: '7',
+    deadline: '26.08.2010',
     nameCourse: 'Экономический анализ производственно-хозяйственной деятельности',
     nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
     nameTest: 'Тест: Анализ использования основных фондов организации'
   },
   {
-    day:'11',
-    deadline:'26.08.2010',
+    day: '11',
+    deadline: '26.08.2010',
     nameCourse: 'Бухгалтерский финансовый учет',
     nameLection: 'Лекция 1: Анализ маркетинговой деятельности',
     nameTest: 'Тест: Анализ использования основных фондов организации'
   }
 ]
-
-
-
 
 export default class Student extends Component {
   render () {

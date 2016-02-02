@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export default class Task extends Component {
 
-  renderTaskList(tasks) {
+  renderTaskList (tasks) {
     const items = tasks
       .map(c => (
         <div className='list-item number'>
@@ -24,35 +24,35 @@ export default class Task extends Component {
     )
   }
 
-  getNameDay(day){
-        if(+day==1)
-            return 'день';
-        else
-          if((+day>=2)&&(+day<=4))
-                return 'дня';
-          else return 'дней';
-
+  getNameDay (day) {
+    if (+day === 1) {
+      return 'день'
+    }
+    if ((+day >= 2) && (+day <= 4)) {
+      return 'дня'
+    }
+    else return 'дней'
   }
 
-  renderColorDay (day){
-    var color;
-    if(day<=2)
-      color = 'num bg-red';
-    else
-    if((day>=3)&&(day<=5))
-      color = 'num bg-orange';
-    else
-    if((day>=6)&&(day<=10))
-      color = 'num bg-aqua';
-    else
+  renderColorDay (day) {
+    var color
+    if (day <= 2) {
+      color = 'num bg-red'
+    } else
+    if ((day >= 3) && (day <= 5)) {
+      color = 'num bg-orange'
+    } else
+    if ((day >= 6) && (day <= 10)) {
+      color = 'num bg-aqua'
+    } else {
       color = 'num bg-light'
-    return(
+    }
+    return (
         <div className={color}>
           <span>{day}</span>
           <div className='day'>{this.getNameDay(day)}</div>
         </div>
       )
-
   }
 
   render () {

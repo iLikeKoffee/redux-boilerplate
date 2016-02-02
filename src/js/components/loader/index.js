@@ -5,17 +5,17 @@ export default class Loader extends Component {
     dots: 1
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.intervalId = setInterval(() => {
       this.setState({dots: (this.state.dots === 3) ? 1 : this.state.dots + 1})
     }, 500)
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     clearInterval(this.intervalId)
   }
 
-  render() {
+  render () {
     let i = this.state.dots
     let dots = ''
     while (i-- > 0) {

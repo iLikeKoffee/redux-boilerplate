@@ -15,7 +15,7 @@ class LoginFormContainer extends Component {
     this.props.dispatch(loginAsync(data.login, data.password))
   }
 
-  render() {
+  render () {
     if (this.props.isFetching) {
       return (
         <Loader/>

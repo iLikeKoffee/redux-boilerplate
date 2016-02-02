@@ -4,28 +4,25 @@ const ImgPath = require('../../../img/face3.png')
 
 export default class Comments extends Component {
 
-  renderComments(comments){
-      const items = comments
-        .map(c => (
-          <div className='comment'>
-            <div className='img f-blue'>
-              <div><img src={ImgPath}/></div>
-              {c.status}
-            </div>
-            <a href='' className='f-blue'>{c.surname}<br/> {c.name}</a>
-            <p className='f-gray'>{c.comment}</p>
-            <a href='' className='f-light s12'>ответить</a>
+  renderComments (comments) {
+    const items = comments
+      .map(c => (
+        <div className='comment'>
+          <div className='img f-blue'>
+            <div><img src={ImgPath}/></div>
+            {c.status}
           </div>
-        ))
-
-      return (
-        <div>
-          {items}
+          <a href='' className='f-blue'>{c.surname}<br/> {c.name}</a>
+          <p className='f-gray'>{c.comment}</p>
+          <a href='' className='f-light s12'>ответить</a>
         </div>
-      )
-
+      ))
+    return (
+      <div>
+        {items}
+      </div>
+    )
   }
-
 
   render () {
     return (
@@ -44,7 +41,6 @@ export default class Comments extends Component {
               </div>
             </div>
           </div>
-
           <div className='row b40'>
             <div className='col-md-8'>
               <h1 className='bubble'>Комментарии</h1>

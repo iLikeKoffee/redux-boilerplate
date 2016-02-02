@@ -18,7 +18,7 @@ const DevTools = createDevTools(
   </DockMonitor>
 )
 
-export function renderDevTools(store) {
+export function renderDevTools (store) {
   if (__DEV__) {
     return (<DevTools store={store}/>)
   } else {

@@ -19,7 +19,7 @@ export const DECREMENT = 'DECREMENT'
  * @function
  * @returns {{type: string}}
  */
-export function increment() {
+export function increment () {
   return {
     type: INCREMENT
   }
@@ -30,7 +30,7 @@ export function increment() {
  * @function
  * @returns {{type: string}}
  */
-export function decrement() {
+export function decrement () {
   return {
     type: DECREMENT
   }

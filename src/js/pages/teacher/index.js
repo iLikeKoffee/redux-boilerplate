@@ -15,10 +15,10 @@ const courses = [
   }
 ]
 
-const lectures =[
+const lectures = [
   {
     name: 'Лекция 1: Анализ маркетинговой деятельности',
-    nameTest:'Тест: Анализ использования основных фондов организации'
+    nameTest: 'Тест: Анализ использования основных фондов организации'
   }
 ]
 
@@ -46,5 +46,3 @@ export default class Teacher extends Component {
     )
   }
 }
-
-

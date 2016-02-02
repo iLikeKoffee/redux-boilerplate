@@ -2,16 +2,15 @@ import React, {Component} from 'react'
 
 export default class Lecture extends Component {
 
-  renderLections (lectures){
-    const items=lectures
+  renderLections (lectures) {
+    const items = lectures
       .map(c => (
         <div>
         <div className='list-item'><a href='' className='f-blue lnk-list'>{c.name}</a></div>
         <div className='list-item'><a href='' className='f-blue lnk-apply'>{c.nameTest}</a></div>
       </div>
           ))
-
-    return(
+    return (
       <div>{items}</div>
     )
   }

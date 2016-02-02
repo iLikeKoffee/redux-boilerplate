@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export default class Course extends Component {
 
-  renderNameLectures(nameLectures){
+  renderNameLectures (nameLectures) {
     const items = nameLectures
       .map(c => (
         <div className='list-item'><a href='' className='f-blue lnk-list'>{c.name}</a></div>
@@ -13,7 +13,7 @@ export default class Course extends Component {
         {items}
       </div>
     )
-}
+  }
 
   render () {
     return (

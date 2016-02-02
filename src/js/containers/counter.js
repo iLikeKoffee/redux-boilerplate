@@ -16,7 +16,7 @@ class Counter extends Component {
     this.props.dispatch(decrement())
   }
 
-  render() {
+  render () {
     return (
       <div className='row'>
         <div className='col-md-12 text-center padding'>

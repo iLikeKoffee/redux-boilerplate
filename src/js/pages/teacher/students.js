@@ -35,8 +35,6 @@ export default class Students extends Component {
                   <a href=''>Фамилия <br/>
                     Имяимя Отчество </a>
                 </div>
-
-
                 </div>
               </div>
             </div>
