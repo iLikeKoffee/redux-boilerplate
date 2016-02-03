@@ -15,7 +15,7 @@ export default class Comments extends Component {
           </div>
           <a href='' className='f-blue'>{c.surname}<br/> {c.name}</a>
           <p className='f-gray'>{c.comment}</p>
-          <a href='' className='f-light s12'>ответить</a>
+          <a href='' className='f-light font-small'>ответить</a>
         </div>
       ))
     return (

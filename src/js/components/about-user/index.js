@@ -11,7 +11,7 @@ export default class User extends Component {
           <img src={ImgPath} width='150'/>
         </div>
         <div className='col-md-6'>
-          <div className='s20 b25'>Михайлов <br/> Илья Пантелеевич</div>
+          <div className='font-large b25'>Михайлов <br/> Илья Пантелеевич</div>
           <div className='b25 profile-info'>
             <div><span className='f-blue'>Факультет: </span> Защита информации</div>
             <div><span className='f-blue'>Должность: </span> Доцент кафедры бухгалтерии</div>
