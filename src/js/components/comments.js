@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-const ImgPath = require('../../../img/face3.png')
+const ImgPath = require('../../img/face3.png')
 
 export default class Comments extends Component {
 

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-const logoPath1 = require('../../../img/l1.jpg')
+const logoPath1 = require('../../img/l1.jpg')
 
 export default class Lecture extends Component {
 

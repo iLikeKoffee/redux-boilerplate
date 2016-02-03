@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Task from './task-list'
-import CourseList from './course-list'
+import Task from './../../components/task-list'
+import CourseList from './../../components/course-list'
 import Header from '../../components/header'
 import Logo from '../../components/ksu-logo'
 import Footer from '../../components/footer'
