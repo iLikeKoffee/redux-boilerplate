@@ -5,7 +5,7 @@ import TestUtils from 'react-addons-test-utils'
 
 const NotFound = require('../not-found')
 
-describe('Counter', () => {
+describe('NotFound', () => {
   it('Is rendered correctly', () => {
     const main = TestUtils.renderIntoDocument(<NotFound />)
     expect(TestUtils.isCompositeComponent(main)).toBe(true)
