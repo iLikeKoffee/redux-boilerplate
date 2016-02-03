@@ -134,12 +134,6 @@ h3.bubble:after {
   position: relative;
 }
 
-header {
-  color: #fff;
-  background: #006699;
-  height: 50px;
-}
-
 footer {
   height: 170px;
   margin-top: -170px;
