@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import Lecture from './../../components/lecture'
 import Course from './../../components/course'
-import Comments from './../../components/comments'
+import Comments from './../../components/comments/index'
 import Header from '../../components/header'
-import Logo from '../../components/ksu-logo'
-import Footer from '../../components/footer'
+import Logo from '../../components/subhead/index'
+import Footer from '../../components/footer/index'
 
 const title = 'Романтизм и реализм во французской литературе 30-40-х годов XIX века'
 

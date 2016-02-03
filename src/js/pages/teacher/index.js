@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import Lecture from './../../components/lectures'
-import Courses from './../../components/courses'
+import Courses from './../../components/courses/courses'
 import Students from './../../components/students'
 import Header from '../../components/header'
-import Logo from '../../components/ksu-logo'
-import Footer from '../../components/footer'
+import Logo from '../../components/subhead/index'
+import Footer from '../../components/footer/index'
 
 const courses = [
   {

@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import Task from './../../components/task-list'
+import Task from './../../components/task-list/task-list'
 import CourseList from './../../components/course-list'
 import Header from '../../components/header'
-import Logo from '../../components/ksu-logo'
-import Footer from '../../components/footer'
+import Logo from '../../components/subhead/index'
+import Footer from '../../components/footer/index'
 
 const courses = [
   {

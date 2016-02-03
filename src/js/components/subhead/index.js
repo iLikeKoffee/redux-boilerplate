@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
-import User from './about-user'
+import User from './../about-user/index'
+import './styles.less'
 
-const logoPath = require('../../img/logo.png')
+const logoPath = require('../../../img/logo.png')
 
 export default class KSULogo extends Component {
   static propTypes = {}

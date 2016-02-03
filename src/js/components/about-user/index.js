@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
+import './styles.less'
 
-const ImgPath = require('../../img/19.png')
+const ImgPath = require('../../../img/19.png')
 
 export default class User extends Component {
   render () {

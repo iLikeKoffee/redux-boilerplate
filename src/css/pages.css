@@ -134,94 +134,6 @@ h3.bubble:after {
   position: relative;
 }
 
-footer {
-  height: 170px;
-  margin-top: -170px;
-  color: #fff;
-  background: #006699;
-  padding: 35px 0;
-  font-size: 0;
-}
-footer .row > div {display: inline-block; vertical-align: bottom; float: none; font-size: 14px;}
-footer .text {position: relative; top:5px;}
-
-.menu {list-style: none; text-align: justify; margin: 0; padding: 0;}
-.menu li {
-  display: inline-block;
-  position: relative;
-  line-height: 50px;
-  vertical-align: middle;
-  margin: 0px 20px;
-}
-.menu:after {display: inline-block; content: ""; width: 100%;}
-.menu li .notice {
-  position: absolute;
-  line-height: 17px;
-  min-width: 17px;
-  text-align: center;
-  border-radius: 9px;
-  background: #ff9900;
-  display: inline-block;
-  top:7px;
-  left:100%;
-  padding: 0 5px;
-  font-size: 13px;
-}
-.menu li .notice.aqua {background: #4182f0;}
-.menu li .caret:before {
-  display: inline-block;
-  content: "";
-  border-top:5px solid #fff;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  position: relative;
-  margin-right: 2px;
-}
-.search input {
-  width: 190px;
-  height: 30px;
-  font-family: 'helios';
-  border: none;
-  outline: none;
-  border-radius: 15px;
-  padding-left: 32px;
-  padding-right: 15px;
-}
-.search button {
-  outline: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 35px;
-  height: 30px;
-  position: absolute;
-  top:50%;
-  left: 0%;
-  margin-top: -15px;
-  background: url(../img/icon-search.png) 50% 50% no-repeat;
-}
-
-.subhead {
-  background: #fff;
-  padding: 30px 0 20px;
-}
-
-.logo {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 20px;
-  color: #006699;
-  text-transform: uppercase;
-  line-height: 1.7;
-  margin-left: 20px;
-  position: relative;
-}
-.logo img {margin-right: 10px; display: inline-block; width: 70px;position: relative;    float: left;}
-.logo span {display: inline-block; width: 200px;    float: right;}
-footer .logo {color: #fff; font-size: 19px; top:10px;}
-footer .logo img {width: auto;}
-
-.profile-info >div {margin:10px 0;}
 .right {padding-left: 20px;}
 
 .lnk-edit {
@@ -260,7 +172,6 @@ footer .logo img {width: auto;}
   text-align: center;
 }
 .list-item .counter   {display: block; font-size: 36px; line-height: 1; padding-top: 5px;}
-.list-item .counter .deadline {font-size: 12px; position: absolute; bottom: 0;}
 
 
 
@@ -280,7 +191,6 @@ footer .logo img {width: auto;}
   cursor: pointer;
   border-radius: 10px;
 }
-.btn-add {padding-left: 55px; background-image: url(../img/icon-add.png); background-repeat: no-repeat; background-position: 25px 50%; }
 .btn-edit {padding-left: 55px; background-image: url(../img/icon-settings-white.png); background-repeat: no-repeat; background-position: 25px 50%; }
 
 .btn.sm {font-family: 'helios'; line-height: 30px; border-radius: 6px; padding: 0 20px;}
@@ -309,14 +219,5 @@ footer .logo img {width: auto;}
   border:2px solid #666;
 }
 .input textarea {resize: vertical; height: 90px; padding: 10px;}
-
-.comment {position: relative; padding-left: 80px; margin-bottom: 40px;}
-.comment .comment {margin:10px 0;}
-.comment .img {position: absolute; top:0; left:0; font-size: 12px; text-align: center;}
-.comment .img div {width: 65px; height: 65px; overflow: hidden; border-radius: 50%; position: relative; margin-bottom: 8px;}
-.comment .img img {width: 100%;}
-.comment p {line-height: 1.5; margin-top: 18px; border-bottom: 1px solid #666; padding-bottom: 7px; margin-bottom: 7px;}
-
-.day {font-size: 11pt;}
 
 .num span {display: block; font-size: 36px; line-height: 1; padding-top: 2px;}

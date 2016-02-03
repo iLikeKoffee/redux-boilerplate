@@ -16,3 +16,61 @@
     }
   }
 }
+
+.menu {list-style: none; text-align: justify; margin: 0; padding: 0;}
+.menu li {
+  display: inline-block;
+  position: relative;
+  line-height: 50px;
+  vertical-align: middle;
+  margin: 0px 20px;
+}
+.menu:after {display: inline-block; content: ""; width: 100%;}
+.menu li .notice {
+  position: absolute;
+  line-height: 17px;
+  min-width: 17px;
+  text-align: center;
+  border-radius: 9px;
+  background: #ff9900;
+  display: inline-block;
+  top:7px;
+  left:100%;
+  padding: 0 5px;
+  font-size: 13px;
+}
+.menu li .notice.aqua {background: #4182f0;}
+.menu li .caret:before {
+  display: inline-block;
+  content: "";
+  border-top:5px solid #fff;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  position: relative;
+  margin-right: 2px;
+}
+
+
+.search input {
+  width: 190px;
+  height: 30px;
+  font-family: 'helios';
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding-left: 32px;
+  padding-right: 15px;
+}
+.search button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  top:50%;
+  left: 0%;
+  margin-top: -15px;
+  background: url(../../../img/icon-search.png) 50% 50% no-repeat;
+}

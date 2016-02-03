@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
+import './styles.less'
 
-const ImgPath = require('../../img/logo-footer.png')
+const ImgPath = require('../../../img/logo-footer.png')
 
 export default class Footer extends Component {
   render () {
