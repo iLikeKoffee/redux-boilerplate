@@ -6,6 +6,7 @@ import NotFound from './pages/not-found'
 import Student from './pages/student'
 import Teacher from './pages/teacher'
 import TeacherLecture from './pages/techer-lecture'
+import News from './pages/news'
 
 const config = [
   <Route path='/'>
@@ -13,6 +14,7 @@ const config = [
     <Route path='student' component={Student}/>
     <Route path='teacher' component={Teacher}/>
     <Route path='teacher-lecture' component={ TeacherLecture}/>
+    <Route path='news' component={News}/>
     <Route path='login' component={Login}/>,
     <Route path='*' component={NotFound}/>
   </Route>

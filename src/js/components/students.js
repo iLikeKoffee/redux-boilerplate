@@ -4,7 +4,7 @@ const ImgPath = require('../../img/face1.png')
 
 export default class Students extends Component {
 
-  renderStudents (students){
+  renderStudents (students) {
     const items = students
       .map(c => (
         <div className='col-md-3 item-stud'>
