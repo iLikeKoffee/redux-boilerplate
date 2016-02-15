@@ -17,7 +17,8 @@ export default class User extends Component {
             <div><span className='f-blue'>Должность: </span> Доцент кафедры бухгалтерии</div>
             <div><span className='f-blue'>Email: </span> sdfj@sdf.ty</div>
           </div>
-          <a href='' className='f-light lnk-edit'>Редактировать профиль</a>
+         <div className='f-light glyphicon glyphicon-cog'></div>
+         <a href='' className='f-light lnk'>Редактировать профиль</a>
         </div>
       </div>
     )

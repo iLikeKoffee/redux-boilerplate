@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import './styles.less'
 
 export default class Courses extends Component {
 
@@ -22,7 +21,9 @@ export default class Courses extends Component {
           <h2 className='b30'>Курсы</h2>
           {this.renderCourses(this.props.courses)}
           <div className='b40'></div>
-          <a href='' className='btn bg-aqua btn-add'>Добавить курс</a>
+          <a href='' className='btn bg-aqua'>
+            <div className='glyphicon glyphicon-plus btn-sign-margin '></div>
+            Добавить курс</a>
         </div>
       </div>
     )

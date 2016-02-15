@@ -6,7 +6,7 @@ var devFlagPlugin = new webpack.DefinePlugin({
 
 module.exports = {
   entry: [
-    './src/js/index.js'
+    './src/js/courses.js'
   ],
   output: {
     path: __dirname + '/static/',

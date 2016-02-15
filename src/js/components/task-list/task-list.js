@@ -15,8 +15,12 @@ export default class Task extends Component {
             </div>
           </div>
           <h3 className='b25'>{c.nameCourse}</h3>
-          <a href='' className='f-blue lnk-list'>{c.nameLection}</a>
-          <a href='' className='f-blue lnk-apply'>{c.nameTest}</a>
+          <div className='f-blue glyphicon glyphicon-edit '>
+            <a href='' className='f-blue lnk'>{c.nameLection}</a>
+          </div>
+          <div className='f-blue glyphicon glyphicon-ok '>
+            <a href='' className='f-blue lnk'>{c.nameTest}</a>
+          </div>
         </div>
       ))
 
