@@ -1,5 +1,10 @@
 import React, {Component} from 'react'
 import './styles.less'
+import Notice from '../notice/index'
+
+const messages = 128
+const notice = 12
+const students = 8
 
 export default class Header extends Component {
   render () {
@@ -9,9 +14,11 @@ export default class Header extends Component {
           <ul className='row'>
             <li className='nav-item'>
               <a href=''>Сообщения</a>
+              <Notice notice={messages}/>
             </li>
             <li className='nav-item'>
               <a href=''>Уведомления</a>
+              <Notice notice={notice}/>
             </li>
             <li className='nav-item'>
               <a href=''>Новости</a>
@@ -24,6 +31,7 @@ export default class Header extends Component {
             </li>
             <li className='nav-item'>
               <a href=''>Студенты</a>
+              <Notice notice={students}/>
             </li>
             <li className='nav-item'>
               <a href=''>Кабинет</a>
