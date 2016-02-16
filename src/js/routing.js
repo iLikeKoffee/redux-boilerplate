@@ -7,13 +7,15 @@ import Student from './pages/student'
 import Teacher from './pages/teacher'
 import TeacherLecture from './pages/techer-lecture'
 import News from './pages/news'
+import SandBox from './components/sandbox'
 
 const config = [
   <Route path='/'>
     <IndexRoute component={Main}/>,
     <Route path='student' component={Student}/>
     <Route path='teacher' component={Teacher}/>
-    <Route path='teacher-lecture' component={ TeacherLecture}/>
+    <Route path='teacher-lecture' component={TeacherLecture}/>
+    <Route path='sandbox' component={SandBox}/>
     <Route path='news' component={News}/>
     <Route path='login' component={Login}/>,
     <Route path='*' component={NotFound}/>
