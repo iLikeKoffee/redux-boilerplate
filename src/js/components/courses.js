@@ -17,7 +17,7 @@ export default class Courses extends Component {
   render () {
     return (
       <div className='col-md-4 b30'>
-        <div className='right'>
+        <div className='right hide-on-small'>
           <h2 className='b30'>Курсы</h2>
           {this.renderCourses(this.props.courses)}
           <div className='b40'></div>

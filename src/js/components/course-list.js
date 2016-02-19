@@ -52,7 +52,7 @@ export default class CourseList extends Component {
   render () {
     return (
       <div className='col-md-4 b30'>
-        <div className='right'>
+        <div className='right hide-on-small'>
           <h2 className='b30'>Курсы</h2>
           <h3 className='bubble'>Обязательная программа</h3>
           {this.renderRequiredCourses(this.props.courses)}
