@@ -16,9 +16,12 @@ export default class KSULogo extends Component {
       <div className='subhead shad'>
         <div className='container'>
           <div className='row'>
-            <User/>
+            <div className="col-md-8">
+              <User/>
+            </div>
             <div className='col-md-4'>
-              <a href='' className='logo hidden-logo'> <img src={logoPath}/> <span>Портал дистанционного образования КГУ</span>
+              <a href='' className='logo hidden-logo'> <img src={logoPath}/>
+                <span>Портал дистанционного образования КГУ</span>
               </a>
             </div>
           </div>
