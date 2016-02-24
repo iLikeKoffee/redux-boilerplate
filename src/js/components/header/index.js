@@ -2,14 +2,37 @@ import React, {Component} from 'react'
 import './styles.less'
 import Notice from '../notice/index'
 
-const messages = 128
-const notice = 12
-const students = 8
+const messages = 128;
+const notice = 12;
+const students = 8;
 
 export default class Header extends Component {
+
+  state = {
+    flag : false
+  }
+
+     clickBut() {
+      var nav = document.getElementsByClassName('mob-menu')[0]
+       var f = this.state.flag
+       this.setState({flag:!f})
+
+      if(!f)
+      {
+        nav.classList.remove('hide-nav');
+        nav.classList.add('show-nav');
+      }
+      else {
+        nav.classList.add('hide-nav');
+        nav.classList.remove('show-nav');
+      }
+
+    }
+
+
   render () {
     return (
-      <div className='container-fluid header-wrap '>
+      <div className='container-fluid header-wrap'>
         <header className='nav container'>
 
           <ul className='row hide-nav'>
@@ -38,11 +61,8 @@ export default class Header extends Component {
               <a href=''>Кабинет</a>
             </li>
           </ul>
-
-
-          <div className='glyphicon glyphicon-th-list' tabindex="0" ></div>
-
-          <ul className='nav navbar-navnavbar-nav show-nav'>
+          <div className='but glyphicon glyphicon-th-list' onClick={(e) => this.props.onClick(this.clickBut(),e)}></div>
+          <ul className='mob-menu nav navbar-navnavbar-nav hide-nav'>
             <li>
               <a href=''>Сообщения
                 <Notice notice={messages}/>
@@ -68,4 +88,3 @@ export default class Header extends Component {
     )
   }
 }
-
