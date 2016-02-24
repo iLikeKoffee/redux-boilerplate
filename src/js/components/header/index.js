@@ -9,28 +9,16 @@ const students = 8;
 export default class Header extends Component {
 
   state = {
-    flag : false
+    isOpen: false
   }
 
-     clickBut() {
-      var nav = document.getElementsByClassName('mob-menu')[0]
-       var f = this.state.flag
-       this.setState({flag:!f})
-
-      if(!f)
-      {
-        nav.classList.remove('hide-nav');
-        nav.classList.add('show-nav');
-      }
-      else {
-        nav.classList.add('hide-nav');
-        nav.classList.remove('show-nav');
-      }
-
-    }
+  clickBut = e => {
+    this.setState({isOpen: !this.state.isOpen})
+  }
 
 
   render () {
+    console.log(this.state);
     return (
       <div className='container-fluid header-wrap'>
         <header className='nav container'>
@@ -61,8 +49,8 @@ export default class Header extends Component {
               <a href=''>Кабинет</a>
             </li>
           </ul>
-          <div className='but glyphicon glyphicon-th-list' onClick={(e) => this.props.onClick(this.clickBut(),e)}></div>
-          <ul className='mob-menu nav navbar-navnavbar-nav hide-nav'>
+          <div className='but glyphicon glyphicon-th-list' onClick={e => this.clickBut()}></div>
+          <ul className={`mob-menu nav navbar-nav ${this.state.isOpen? 'show-nav': 'hide-nav'}`}>
             <li>
               <a href=''>Сообщения
                 <Notice notice={messages}/>
