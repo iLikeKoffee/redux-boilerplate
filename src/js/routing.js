@@ -8,6 +8,7 @@ import Teacher from './pages/teacher'
 import TeacherLecture from './pages/techer-lecture'
 import News from './pages/news'
 import SandBox from './components/sandbox'
+import Profile from './pages/profile'
 
 const config = [
   <Route path='/'>
@@ -17,6 +18,7 @@ const config = [
     <Route path='teacher-lecture' component={TeacherLecture}/>
     <Route path='sandbox' component={SandBox}/>
     <Route path='news' component={News}/>
+    <Route path='profile' component={Profile}/>
     <Route path='login' component={Login}/>,
     <Route path='*' component={NotFound}/>
   </Route>

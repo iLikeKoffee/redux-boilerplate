@@ -23,7 +23,7 @@ export default class Header extends Component {
       <div className='container-fluid header-wrap'>
         <header className='nav container'>
 
-          <ul className='row hide-nav'>
+          <ul className='row hide-nav-small'>
             <li className='nav-item'>
               <a href=''>Сообщения</a>
               <Notice notice={messages}/>
@@ -49,6 +49,7 @@ export default class Header extends Component {
               <a href=''>Кабинет</a>
             </li>
           </ul>
+
           <div className='but glyphicon glyphicon-th-list' onClick={e => this.clickBut()}></div>
           <ul className={`mob-menu nav navbar-nav ${this.state.isOpen? 'show-nav': 'hide-nav'}`}>
             <li>
