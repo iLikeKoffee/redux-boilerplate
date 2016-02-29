@@ -2,9 +2,9 @@ import React, {Component} from 'react'
 import './styles.less'
 import Notice from '../notice/index'
 
-const messages = 128;
-const notice = 12;
-const students = 8;
+const messages = 128
+const notice = 12
+const students = 8
 
 export default class Header extends Component {
 
@@ -16,13 +16,10 @@ export default class Header extends Component {
     this.setState({isOpen: !this.state.isOpen})
   }
 
-
   render () {
-    console.log(this.state);
     return (
       <div className='container-fluid header-wrap'>
         <header className='nav container'>
-
           <ul className='row hide-nav-small'>
             <li className='nav-item'>
               <a href=''>Сообщения</a>
@@ -49,9 +46,8 @@ export default class Header extends Component {
               <a href=''>Кабинет</a>
             </li>
           </ul>
-
           <div className='but glyphicon glyphicon-th-list' onClick={e => this.clickBut()}></div>
-          <ul className={`mob-menu nav navbar-nav ${this.state.isOpen? 'show-nav': 'hide-nav'}`}>
+          <ul className={`mob-menu nav navbar-nav ${this.state.isOpen ? 'show-nav': 'hide-nav'}`}>
             <li>
               <a href=''>Сообщения
                 <Notice notice={messages}/>

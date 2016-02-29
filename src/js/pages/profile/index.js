@@ -4,8 +4,6 @@ import PersonalSetting from '../../components/personal-setting'
 import Footer from '../../components/footer/index'
 import PersonalData from '../../components/personal-data'
 
-const logoPath = require('../../../img/logo.png')
-
 export default class Profile extends Component {
   render () {
     return (
