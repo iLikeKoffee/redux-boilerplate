@@ -7,7 +7,7 @@ export default class PersonalSetting extends Component {
 
   render () {
     return (
-      <div className='setting-panel-right '>
+      <div className='setting-panel-right col-lg-4 col-md-5 col-sm-6 col-xs-6'>
         <div className='panel panel-default '>
           <a href='' className='logo logo-panel'>
             <img src={logoPath}/>
