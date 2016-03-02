@@ -13,11 +13,11 @@ export default class Profile extends Component {
           <div className='shad pt40'>
             <div className='container'>
               <div className='row'>
-          <PersonalData/>
-          <PersonalSetting/>
-                </div>
+                <PersonalSetting/>
+                <PersonalData/>
               </div>
             </div>
+          </div>
         </div>
         <Footer/>
       </div>
