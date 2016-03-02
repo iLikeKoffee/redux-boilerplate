@@ -10,7 +10,7 @@ export default class PersonalData extends Component {
       <div className='wrap col-md-5 '>
         <div className='list-group data-panel row'>
           <div className='col-md-5'>
-            <div className="thumbnail">
+            <div className='thumbnail'>
               <img src={ImgPath} width='100'/>
               <div className='caption'>
                 <div href='#' className='btn-download btn btn-primary' role='button'>Загрузить</div>
@@ -29,15 +29,13 @@ export default class PersonalData extends Component {
             <div className='list-group-item'><input type='text' className='form-control' placeholder='Курс'/></div>
             <div className='list-group-item'><input type='text' className='form-control' placeholder='Специальность'/>
             </div>
-            <div className="list-group-item">
+            <div className='list-group-item'>
               <div className='caption'>
                 <div type='button' className='btn btn-ok'>Применить</div>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
     )
   }
