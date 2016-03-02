@@ -9,7 +9,7 @@ export default class PersonalData extends Component {
     return (
       <div className='wrap col-md-5 '>
         <div className='list-group data-panel row'>
-          <div className='col-md-5'>
+          <div className='col-md-6 '>
             <div className='thumbnail'>
               <img src={ImgPath} width='100'/>
               <div className='caption'>
