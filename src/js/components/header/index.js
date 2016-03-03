@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
+import {Router, Route,Link} from 'react-router'
 import './styles.less'
 import Notice from '../notice/index'
+import News from '../../pages/news'
+import Profile from '../../pages/profile'
 
 const messages = 128
 const notice = 12
@@ -30,7 +33,7 @@ export default class Header extends Component {
               <Notice notice={notice}/>
             </li>
             <li className='nav-item'>
-              <a href=''>Новости</a>
+             <a href=''><Link to="/news">Новости</Link></a>
             </li>
             <li className='nav-item'>
               <a href=''>Курсы</a>
@@ -43,7 +46,7 @@ export default class Header extends Component {
               <Notice notice={students}/>
             </li>
             <li className='nav-item'>
-              <a href=''>Кабинет</a>
+              <a href=''><Link to="/profile">Кабинет</Link></a>
             </li>
           </ul>
           <div className='but glyphicon glyphicon-th-list' onClick={e => this.clickBut()}></div>
@@ -58,7 +61,7 @@ export default class Header extends Component {
                 <Notice notice={notice}/>
               </a>
             </li>
-            <li><a href=''>Новости</a></li>
+            <li><a href=''><Link to="/news">Новости</Link></a></li>
             <li><a href=''>Курсы</a></li>
             <li><a href=''>База знаний</a></li>
             <li>
@@ -66,7 +69,7 @@ export default class Header extends Component {
                 <Notice notice={students}/>
               </a>
             </li>
-            <li><a href=''>Кабинет</a></li>
+            <li><a href=''><Link to="/profile">Кабинет</Link></a></li>
           </ul>
         </header>
       </div>
