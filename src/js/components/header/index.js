@@ -19,7 +19,7 @@ export default class Header extends Component {
     this.setState({isOpen: !this.state.isOpen})
   }
 
-  render () {
+  render() {
     return (
       <div className='container-fluid header-wrap'>
         <header className='nav container'>
@@ -33,7 +33,9 @@ export default class Header extends Component {
               <Notice notice={notice}/>
             </li>
             <li className='nav-item'>
-             <a href=''><Link to="/news">Новости</Link></a>
+              <a href=''>
+                <Link to="/news">Новости</Link>
+              </a>
             </li>
             <li className='nav-item'>
               <a href=''>Курсы</a>
@@ -46,9 +48,12 @@ export default class Header extends Component {
               <Notice notice={students}/>
             </li>
             <li className='nav-item'>
-              <a href=''><Link to="/profile">Кабинет</Link></a>
+              <a href=''>
+                <Link to="/profile">Кабинет</Link>
+              </a>
             </li>
           </ul>
+
           <div className='but glyphicon glyphicon-th-list' onClick={e => this.clickBut()}></div>
           <ul className={`mob-menu nav navbar-nav ${this.state.isOpen ? 'show-nav': 'hide-nav'}`}>
             <li>
@@ -61,7 +66,11 @@ export default class Header extends Component {
                 <Notice notice={notice}/>
               </a>
             </li>
-            <li><a href=''><Link to="/news">Новости</Link></a></li>
+            <li>
+              <a href=''>
+                <Link to="/news">Новости</Link>
+              </a>
+            </li>
             <li><a href=''>Курсы</a></li>
             <li><a href=''>База знаний</a></li>
             <li>
@@ -69,7 +78,11 @@ export default class Header extends Component {
                 <Notice notice={students}/>
               </a>
             </li>
-            <li><a href=''><Link to="/profile">Кабинет</Link></a></li>
+            <li>
+              <a href=''>
+                <Link to="/profile">Кабинет</Link>
+              </a>
+            </li>
           </ul>
         </header>
       </div>
