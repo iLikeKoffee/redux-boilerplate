@@ -13,6 +13,7 @@ export default class AboutCourse extends Component {
           <h1 className='bubble'>
             <div>
               <div> {c.title}</div>
+              <div className='cover'><img src={fond} width = '200'/></div>
               <a href="">
                 <div className='teacher'>
                   <div className='img-teacher'><img src={ImgPath} width='100'/></div>
@@ -22,11 +23,8 @@ export default class AboutCourse extends Component {
             </div>
           </h1>
           <p>{c.text}</p>
-
-
         </div>
       ))
-
     return (
       <div>{items}</div>
     )
@@ -36,7 +34,6 @@ export default class AboutCourse extends Component {
     return (
       <div>
         {this.renderNewsList(this.props.data)}
-
       </div>
     )
   }
