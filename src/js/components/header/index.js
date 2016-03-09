@@ -2,8 +2,6 @@ import React, {Component} from 'react'
 import {Router, Route,Link} from 'react-router'
 import './styles.less'
 import Notice from '../notice/index'
-import News from '../../pages/news'
-import Profile from '../../pages/profile'
 
 const messages = 128
 const notice = 12
@@ -38,7 +36,9 @@ export default class Header extends Component {
               </a>
             </li>
             <li className='nav-item'>
-              <a href=''>Курсы</a>
+              <a href=''>
+                <Link to="/list-courses">Курсы</Link>
+              </a>
             </li>
             <li className='nav-item'>
               <a href=''>База знаний</a>
