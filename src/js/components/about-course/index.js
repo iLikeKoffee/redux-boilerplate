@@ -22,7 +22,7 @@ export default class AboutCourse extends Component {
           <a href="">
             <div className='teacher'>
               <div className='img-teacher'><img src={ImgPath} width='100'/></div>
-              <div className='name-teacher'> {c.surname}<br/> {c.name}</div>
+              <div className='name-teacher'>{c.surname} {c.name}</div>
             </div>
           </a>
         </div>
