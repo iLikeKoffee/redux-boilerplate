@@ -9,7 +9,7 @@ h3 {
   font-size: 20px;
 }
 
-h1.bubble {
+.bubble {
   position: relative;
   padding: 0 0 16px 20px;
   border-left: 4px solid #006699;
@@ -17,7 +17,7 @@ h1.bubble {
   margin-bottom: 40px;
 }
 
-h1.bubble:before {
+.bubble:before {
   position: absolute;
   content: "";
   border-top: 30px solid #006699;
@@ -27,41 +27,13 @@ h1.bubble:before {
   left: 20px;
 }
 
-h1.bubble:after {
+.bubble:after {
   position: absolute;
   content: "";
-  border-top: 30px solid #fafafa;
+  border-top: 30px solid white;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   top: 100%;
   left: 20px;
   margin-top: -6px;
-}
-
-h3.bubble {
-  position: relative;
-  padding: 0 0 16px 20px;
-  border-left: 1px solid #333;
-  border-bottom: 1px solid #333;
-}
-
-h3.bubble:before {
-  position: absolute;
-  content: "";
-  border-top: 12px solid #333;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: 100%;
-  left: 20px;
-}
-
-h3.bubble:after {
-  position: absolute;
-  content: "";
-  border-top: 12px solid #fafafa;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: 100%;
-  left: 20px;
-  margin-top: -1px;
 }
