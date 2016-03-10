@@ -10,6 +10,8 @@ import News from './pages/news'
 import SandBox from './components/sandbox'
 import Profile from './pages/profile'
 import ListCourses from './pages/list-courses'
+import ListStudents from './pages/list-students'
+
 
 const config = [
   <Route path='/'>
@@ -21,6 +23,7 @@ const config = [
     <Route path='news' component={News}/>
     <Route path='profile' component={Profile}/>
     <Route path='list-courses' component={ListCourses}/>
+    <Route path='list-students' component={ListStudents}/>
     <Route path='login' component={Login}/>,
     <Route path='*' component={NotFound}/>
   </Route>

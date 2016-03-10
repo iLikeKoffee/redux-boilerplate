@@ -44,7 +44,9 @@ export default class Header extends Component {
               <a href=''>База знаний</a>
             </li>
             <li className='nav-item'>
-              <a href=''>Студенты</a>
+              <a href=''>
+                <Link to="/list-students">Студенты</Link>
+              </a>
               <Notice notice={students}/>
             </li>
             <li className='nav-item'>
