@@ -12,7 +12,7 @@ const data = [
     title: 'World Religions',
     surname: 'Иванов',
     name: 'Иван Иванович',
-    text: 'Sed ut perspiciatis, unde omnis iste natus error Sed ut perspiciatis, unde omnis iste natus errorSed ut perspiciatis, unde omnis iste natus errorSed ut perspiciatis, unde omnis iste natus errorSed ut perspiciatis, unde omnis iste natus errorSed ut perspiciatis, unde omnis iste natus errorSed ut perspiciatis, unde omnis iste natus error'
+    text: 'Sed ut perspiciatis, unde omnis iste natus error '
   },
 
   {
