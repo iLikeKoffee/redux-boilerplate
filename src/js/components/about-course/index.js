@@ -6,13 +6,13 @@ const ImgPath = require('../../../img/19.png')
 
 export default class AboutCourse extends Component {
 
-  renderNewsList(newsList) {
+  renderNewsList (newsList) {
     const items = newsList
-      .map (c => (
+      .map(c => (
         <div className='list-item number'>
           <h1 className='bubble'>
             <div>
-              <div className='cover'><img src={fond} width = '200' height = '150'/></div>
+              <div className='cover' style={{backgroundImage: `url(${fond})`}}/>
               <div className="data-right">
                 <div className='title'> {c.title}</div>
                 <div className='text'> {c.text}</div>
@@ -32,7 +32,7 @@ export default class AboutCourse extends Component {
     )
   }
 
-  render() {
+  render () {
     return (
       <div>
         {this.renderNewsList(this.props.data)}

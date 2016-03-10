@@ -15,14 +15,17 @@
   display: inline-block;
 }
 
-.cover img {
-  border-radius: 100px;
+.cover {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: 150%;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
-.bubble:hover {
-  .cover img {
-    border-radius: 0px;
-  }
+.cover:hover {
+  border-radius: 2px;
 }
 
 .data-right {
