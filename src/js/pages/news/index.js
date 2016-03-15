@@ -5,6 +5,9 @@ import NewsList from './../../components/newsList/index'
 import Pagination from './../../components/pagination/index'
 import Footer from '../../components/footer/index'
 
+import {connect} from 'react-redux'
+import {fetchNews} from '../../ducks/news'
+
 const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 const newsList = [
@@ -24,7 +27,12 @@ const newsList = [
 
 const logoPath = require('../../../img/logo.png')
 
-export default class News extends Component {
+export class News extends Component {
+  componentWillMount () {
+    const {dispatch} = this.props
+    dispatch(fetchNews())
+  }
+
   render () {
     return (
       <div>
@@ -44,8 +52,8 @@ export default class News extends Component {
             <div className='container'>
               <div className='row'>
                 <div className='col-md-8 b30'>
-                  <NewsList newsList = {newsList} />
-                  <Pagination pages = {pages} current = {5}/>
+                  <NewsList newsList={newsList}/>
+                  <Pagination pages={pages} current={5}/>
                 </div>
               </div>
             </div>
@@ -56,4 +64,8 @@ export default class News extends Component {
     )
   }
 }
+
+const mapStateToProps = state => ({})
+
+export default connect(mapStateToProps)(News)
 

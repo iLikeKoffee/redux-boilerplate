@@ -1,15 +1,15 @@
 import {createStore, applyMiddleware, combineReducers, compose} from 'redux'
-import thunkMiddleware from 'redux-thunk'
 import {reduxReactRouter} from 'redux-router'
 import {createHistory} from 'history'
 import * as reducers from '../ducks/reducers'
 import DevTools from '../utils/dev-tools'
 import routes from '../routing'
+import apiMiddleware from '../api/middleware'
 
 let createStoreWithMiddleware
 if (__DEV__) {
   createStoreWithMiddleware = compose(
-    applyMiddleware(thunkMiddleware),
+    applyMiddleware(apiMiddleware),
     reduxReactRouter({
       routes,
       createHistory
@@ -18,7 +18,7 @@ if (__DEV__) {
   )(createStore)
 } else {
   createStoreWithMiddleware = compose(
-    applyMiddleware(thunkMiddleware),
+    applyMiddleware(apiMiddleware),
     reduxReactRouter({
       routes,
       createHistory
