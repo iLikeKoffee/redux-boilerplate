@@ -1,7 +1,11 @@
 {
   "name": "redux-boilerplate",
   "description": "Boilerplate for react-redux quick start",
-  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iLikeKoffee/redux-boilerplate"
+  },
+  "version": "0.2.0",
   "scripts": {
     "start": "DEBUG=true node server.js",
     "build": "webpack -p --config webpack.production.js",

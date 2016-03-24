@@ -1,8 +1,7 @@
 React-redux boilerplate
 =======================
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-![](https://img.shields.io/badge/version-0.1.0-green.svg)
-![](https://img.shields.io/badge/version-0.1.0-green.svg)
+![](https://img.shields.io/badge/version-0.2.0-green.svg)
 
 Features
 --------
