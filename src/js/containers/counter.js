@@ -5,7 +5,7 @@ import {increment, decrement} from '../ducks/counter';
 class Counter extends Component {
   static propTypes = {
     counter: React.PropTypes.number,
-    dispatch: React.PropTypes.Function
+    dispatch: React.PropTypes.func
   }
 
   handleIncrement = (e) => {
