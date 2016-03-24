@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {increment, decrement} from '../ducks/counter'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {increment, decrement} from '../ducks/counter';
 
 class Counter extends Component {
   static propTypes = {
-    counter: React.PropTypes.String,
+    counter: React.PropTypes.number,
     dispatch: React.PropTypes.Function
   }
 
