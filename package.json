@@ -7,8 +7,8 @@
     "build": "webpack -p --config webpack.production.js",
     "build-dev": "webpack -p",
     "lint": "./node_modules/.bin/standard --verbose | ./node_modules/.bin/snazzy",
-    "jest": "./node_modules/.bin/jest",
-    "test": "npm run lint && npm run jest",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --colors --recursive ./src/**/test/**.js",
+    "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch --colors --recursive ./src/**/test/**.js",
     "clean": "rm -rf static/* bundle.tar.gz",
     "tar": "tar -czf bundle.tar.gz index.html static",
     "package": "npm run clean && npm run test && npm run build && npm run tar",
@@ -28,6 +28,10 @@
     "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
+    "mocha": "^2.4.5",
+    "mocha-jsdom": "^1.1.0",
+    "should": "^8.2.2",
+    "sinon": "^1.17.3",
     "autoprefixer-loader": "^3.1.0",
     "babel-core": "^6.7.4",
     "babel-eslint": "^5.0.0",
