@@ -114,6 +114,7 @@ export default class HTTPRequest {
       headers: this._headers
     })
 
-    return fetch(this._prepareRequest(request)).then(this._prepareResponse)
+    return fetch(this._prepareRequest(request))
+      .then(this._prepareResponse)
   }
 }

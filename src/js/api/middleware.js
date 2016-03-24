@@ -6,6 +6,7 @@ export default function middleware ({dispatch}) {
       resource
         .getRequestOrThrow()
         .execute()
+        .then(response => (response.json()))
         .then(response => {
           dispatch({
             type: resource.getSuccessActionTypeOrThrow(),
