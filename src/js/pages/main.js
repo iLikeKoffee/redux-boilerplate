@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
-import Teacher from './teacher/index'
+import Counter from '../containers/counter'
 
 export default class Main extends Component {
 
   render () {
     return (
-      <Teacher/>
+      <div>
+        <Counter/>
+      </div>
     )
   }
 }
