@@ -1,10 +1,14 @@
 import React from 'react'
-import {Route, IndexRoute} from 'react-router'
+import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import Main from './pages/main'
+import store from './store'
+import {syncHistoryWithStore} from 'react-router-redux'
+const history = syncHistoryWithStore(browserHistory, store)
 
-const config = (
-  <Route path='/'>
-    <IndexRoute component={Main}/>,
-  </Route>)
-
-export default config
+export default (
+  <Router history={history}>
+    <Route path='/'>
+      <IndexRoute component={Main}/>,
+    </Route>
+  </Router>
+)

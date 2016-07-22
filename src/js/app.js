@@ -1,19 +1,13 @@
 import React from 'react'
 import {Provider} from 'react-redux'
-import configureStore from './store'
-import {ReduxRouter} from 'redux-router'
-import routes from './routing'
-import {renderDevTools} from './utils/dev-tools'
+import router from './routing'
 
-const store = configureStore()
-
-export default function () {
-  return (
-    <div>
-      <Provider store={store}>
-        <ReduxRouter children={routes}/>
+export default class App extends React.Component {
+  render () {
+    return (
+      <Provider store={this.props.store}>
+        {router}
       </Provider>
-      {renderDevTools(store)}
-    </div>
-  )
+    )
+  }
 }

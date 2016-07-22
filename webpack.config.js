@@ -1,12 +1,13 @@
 var webpack = require('webpack')
 
 var devFlagPlugin = new webpack.DefinePlugin({
-  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
+  __DEBUG__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
 })
 
 module.exports = {
+  devtool: 'sourcemap',
   entry: [
-    'webpack-dev-server/client?http://localhost:8000',
+    'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
     './src/js/index.js'
   ],
@@ -25,7 +26,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['react-hot', 'babel'],
+        loaders: [ 'react-hot', 'babel' ],
         exclude: /node_modules/
       },
       {
@@ -46,6 +47,6 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.json']
+    extensions: [ '', '.js', '.json' ]
   }
 }
