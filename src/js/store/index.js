@@ -1,5 +1,5 @@
 import {createStore, combineReducers, compose} from 'redux'
-import * as reducers from '../ducks/reducers'
+import * as reducers from '../state/reducers'
 import middleware from './middleware'
 import DevTools from '../utils/dev-tools'
 
@@ -14,8 +14,8 @@ const store = createStore(
 )
 
 if (module.hot) {
-  module.hot.accept('../ducks/reducers', () => {
-    store.replaceReducer(combineReducers(require('../ducks/reducers')))
+  module.hot.accept('../state/reducers', () => {
+    store.replaceReducer(combineReducers(require('../state/reducers')))
   });
 }
 

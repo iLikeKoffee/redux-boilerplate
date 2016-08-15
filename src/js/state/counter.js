@@ -21,9 +21,9 @@ const initialState = new Map({
 export default function (state = initialState, action) {
   switch (action.type) {
     case INCREMENT:
-      return state.set('counter', state.get('counter') + 1)
+      return state.set('counter', state.get('counter') + 10)
     case DECREMENT:
-      return state.set('counter', state.get('counter') - 1)
+      return state.set('counter', state.get('counter') - 10)
     default:
       return state;
   }

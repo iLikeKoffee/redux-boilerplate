@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {increment, decrement} from '../ducks/counter'
+import {increment, decrement} from '../state/counter'
 
 class Counter extends Component {
   static propTypes = {
